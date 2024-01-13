@@ -1,7 +1,6 @@
 use swc_core::common::{errors::HANDLER, DUMMY_SP};
 use swc_core::ecma::{
     ast::*,
-    transforms::testing::test,
     utils::quote_ident,
     visit::{as_folder, noop_visit_mut_type, FoldWith, VisitMut, VisitMutWith},
 };
@@ -21,8 +20,6 @@ impl VisitMut for TransformVisitor {
     // https://rustdoc.swc.rs/swc_ecma_visit/trait.VisitMut.html
     fn visit_mut_call_expr(&mut self, call_expr: &mut CallExpr) {
         call_expr.visit_mut_children_with(self);
-
-        dbg!(&call_expr);
 
         if let Callee::Expr(callee) = &mut call_expr.callee {
             if let Expr::Member(member) = &**callee {

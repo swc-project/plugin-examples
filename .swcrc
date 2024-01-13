@@ -7,7 +7,7 @@
         },
         "experimental": {
           "plugins": [
-            ["target/wasm32-wasi/debug/rust_swc_webpack_plugin.wasm", {}]
+            ["/Users/kdy1/projects/plugin-lab/target/wasm32-wasi/debug/rust_swc_webpack_plugin.wasm", {}]
           ]
         }
       },
