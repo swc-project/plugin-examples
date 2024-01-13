@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json.schemastore.org/swcrc",
+      "jsc": {
+        "parser": {
+          "syntax": "typescript",
+          "tsx": true
+        },
+        "experimental": {
+          "plugins": [
+            ["target/wasm32-wasi/debug/rust_swc_webpack_plugin.wasm", {}]
+          ]
+        }
+      },
+      "minify": false,
+      "isModule": true
+  }
