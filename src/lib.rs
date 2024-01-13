@@ -1,9 +1,10 @@
-use swc_core::common::{errors::HANDLER, DUMMY_SP};
+use swc_core::common::DUMMY_SP;
 use swc_core::ecma::{
     ast::*,
     utils::quote_ident,
     visit::{as_folder, noop_visit_mut_type, FoldWith, VisitMut, VisitMutWith},
 };
+use swc_core::plugin::errors::HANDLER;
 use swc_core::plugin::{plugin_transform, proxies::TransformPluginProgramMetadata};
 
 const CONSOLE: &str = "console";
