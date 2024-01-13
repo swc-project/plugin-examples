@@ -5,9 +5,10 @@
           "syntax": "typescript",
           "tsx": true
         },
+        "baseUrl": ".",
         "experimental": {
           "plugins": [
-            ["/Users/kdy1/projects/plugin-lab/target/wasm32-wasi/debug/rust_swc_webpack_plugin.wasm", {}]
+            ["../target/wasm32-wasi/debug/rust_swc_webpack_plugin.wasm", {}]
           ]
         }
       },
