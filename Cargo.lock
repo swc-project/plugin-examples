@@ -983,7 +983,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust-swc-webpack-plugin"
+name = "rust-swc-handler-example"
 version = "0.1.0"
 dependencies = [
  "serde",

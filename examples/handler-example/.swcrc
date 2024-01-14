@@ -8,7 +8,7 @@
         "baseUrl": ".",
         "experimental": {
           "plugins": [
-            ["../target/wasm32-wasi/debug/rust_swc_webpack_plugin.wasm", {}]
+            ["./rust_swc_handler_example.wasm", {}]
           ]
         }
       },
